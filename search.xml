@@ -4,10 +4,24 @@
     <title>markdown基础</title>
     <url>/2020/02/10/markdown%E8%AF%AD%E8%A8%80/</url>
     <content><![CDATA[<h2 id="markdown简介"><a href="#markdown简介" class="headerlink" title="markdown简介"></a>markdown简介</h2><p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。<br>Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。<br>Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多种格式的文档。<br>Markdown 能被使用来撰写电子书，如：Gitbook。当前许多网站都广泛使用 Markdown 来撰写帮助文档或是用于论坛上发表消息,例如：GitHub、简书等。</p>
-<h2 id="markdown标题"><a href="#markdown标题" class="headerlink" title="markdown标题"></a>markdown标题</h2><p>markdown标题有两种格式。</p>
+<h2 id="markdown标题"><a href="#markdown标题" class="headerlink" title="markdown标题"></a>markdown标题</h2><p>markdown标题有两种格式。<br> 1、使用=和-标记一级和二级标题<br>语法格式如下：<br>&emsp; 我展示的是一级标题<br>&emsp; ================<br>&emsp; 我展示的是二级标题<br>&emsp; ----------------<br> 2、使用#号标记<br>使用<code>#</code>号可以表示1-6级标题，一级标题对应一个<code>#</code>，二级标题对应两个<code>#</code>，依次类推。<br>语法格式如下：<br>&emsp;#一级标题<br>&emsp;##二级标题<br>&emsp;###三级标题<br>&emsp;####四级标题<br>&emsp;#####五级标题<br>&emsp;######六级标题</p>
+<h2 id="markdown段落格式"><a href="#markdown段落格式" class="headerlink" title="markdown段落格式"></a>markdown段落格式</h2><ul>
+<li><p><strong>markdown段落</strong><br>Markdown 段落没有特殊的格式，直接编写文字就好，段落的换行是使用两个以上空格加上回车。当然也可以在段落后面使用一个空行来表示重新开始一个段落。</p>
+</li>
+<li><p><strong>字体</strong><br>*斜体文本*<br>_斜体文本_<br>**粗体文本**<br>__粗体文本__<br>***粗斜体文本***<br>___粗斜体文本___</p>
+</li>
+<li><p><strong>分割线</strong><br>你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：<br>***<br>* * *<br>*****<br>- - -<br>-----------<br>效果如下所示：</p>
+</li>
+</ul>
+<hr>
+<hr>
 <ul>
-<li>1、使用=和-标记一级和二级标题<br>语法格式如下：<br>&emsp; 我展示的是一级标题<br>&emsp; ================<br>&emsp; 我展示的是二级标题<br>&emsp; ----------------   </li>
-<li>2、使用#号标记<br>使用<code>#</code>号可以表示1-6级标题，一级标题对应一个<code>#</code>，二级标题对应两个<code>#</code>，依次类推。<br>语法格式如下：<br>&emsp;#一级标题<br>&emsp;##二级标题<br>&emsp;###三级标题<br>&emsp;####四级标题<br>&emsp;#####五级标题<br>&emsp;######六级标题</li>
+<li><p><strong>删除线</strong><br>如果段落上的文字要添加删除线，只需要在文字的两端加上两个<code>~</code>即可，实例如下：<br>~~durian_zzl~~<br>效果如下：<br><del>durian_zzl</del></p>
+</li>
+<li><p><strong>下划线</strong><br>下划线可以通过 HTML 的<code>u</code>标签来实现：<br>&lt;u&gt;durian-zzl&lt;/u&gt;<br>效果如下：<br><u>durian-zzl</u>   </p>
+</li>
+<li><p><strong>脚注</strong><br>脚注是对文本的补充说明。脚注的格式如下：<br>[^要注明的文本]<br>实例如下：<br>创建脚注格式类似这样：<a href="愿你走出半生，归来仍是少年。">^1</a></p>
+</li>
 </ul>
 ]]></content>
   </entry>
