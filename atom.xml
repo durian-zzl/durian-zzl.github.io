@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://durian-zzl.github.io/"/>
-  <updated>2020-02-15T07:08:44.627Z</updated>
+  <updated>2020-10-24T05:57:25.334Z</updated>
   <id>https://durian-zzl.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>双目视觉学习笔记一</title>
+    <link href="https://durian-zzl.github.io/2020/10/24/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80/"/>
+    <id>https://durian-zzl.github.io/2020/10/24/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80/</id>
+    <published>2020-10-24T05:43:28.737Z</published>
+    <updated>2020-10-24T05:57:25.334Z</updated>
+    
+    <content type="html"><![CDATA[<hr><h2 id="title-˫L�Ӿ�ѧϰ�ʼ�һ"><a href="#title-˫L�Ӿ�ѧϰ�ʼ�һ" class="headerlink" title="title:˫Ŀ�Ӿ�ѧϰ�ʼ�һ"></a>title:˫Ŀ�Ӿ�ѧϰ�ʼ�һ</h2><p>##����</p><p>����ڸ�����ʦѧϰ˫Ŀ�Ӿ������֪ʶ����ƪ�ʼ��Ƕ���zyh�����ģ���Ҫ��һЩѧϰ������ע��㣬�����ڴˡ�</p><p>##ѧϰ�ʼ�</p><p>###����ϵת��������У������Ŀ�궨ԭ��</p><p>(����ϵת��)<a href="https://blog.csdn.net/a6333230/article/details/88343282" target="_blank" rel="noopener">https://blog.csdn.net/a6333230/article/details/88343282</a><br>(����У������Ŀ�궨)<a href="https://www.cnblogs.com/zyly/p/9366080.html#_label1" target="_blank" rel="noopener">https://www.cnblogs.com/zyly/p/9366080.html#_label1</a><br><strong>��غ�����</strong><br>����У����ͨ��calibrate Camera()�õ��Ļ���ϵ��������initUndistortRectifyMap()�����ӳ�䣩��remap()����ӳ�䣩У��</p><p>###����У��ԭ��</p><p><strong>����˵����</strong><br>�ټ������������ת����R1��R2��ͶӰ����P1��P2��//stereoRectify()<br>�ڼ���У������ӳ�����//initUndistortRectifyMap()<br>��У������ͼ�����Ч����//���߼���<br><strong>��ͶӰ����Q��</strong><br>������У�������������ʵ������������ϵ��ͼ����������ϵ֮���ת����<br><strong>��غ�����</strong><br>stereoCalibrate()˫Ŀ������궨����������������ͷ�����������֮���ת����ϵ��������������Ĳ������������������֮��Ĺ�ϵ�����Լ������ͱ��ʾ���<br>cvFindExtrinsicCameraParams2()����������ⲿ����<br>stereoRectify()��������R1��R2��P1��P2��Q��</p><p>����ƥ�䣨SGBM�㷨��<br>��SAD�㷨ԭ����ͼ��ƥ�䣩<br>SGBM�㷨����SAD��������Ѱ��ÿ�����ص������Ӳ�<br><a href="https://blog.csdn.net/hitzijiyingcai/article/details/83178348?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.edu_weight&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.edu_weight" target="_blank" rel="noopener">https://blog.csdn.net/hitzijiyingcai/article/details/83178348?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.edu_weight&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.edu_weight</a><br>��SGBMԭ�����<br><a href="https://www.cnblogs.com/hrlnw/p/4746170.html" target="_blank" rel="noopener">https://www.cnblogs.com/hrlnw/p/4746170.html</a><br>(��������)<a href="https://blog.csdn.net/A_L_A_N/article/details/81490043" target="_blank" rel="noopener">https://blog.csdn.net/A_L_A_N/article/details/81490043</a><br><a href="https://blog.csdn.net/qq_36930777/article/details/78128184" target="_blank" rel="noopener">https://blog.csdn.net/qq_36930777/article/details/78128184</a><br>ע�⣺��OpenCV2.1�У�BM�㷨������ CV_16S ���� CV_32F �ķ�ʽ����Ӳ����ݣ�ʹ��32λfloat��ʽ���Եõ���ʵ���Ӳ�ֵ����CV_16S��ʽ�õ����Ӳ��������Ҫ����16���ܵõ���ȷ���ӲOpenCV2. ������������ƥ���㷨 SGBM ��GC ֻ֧�� CV_16S ��ʽ�� disparity ����<br>numberOfDisparities���Ӳ�ڣ�������Ӳ�ֵ����С�Ӳ�ֵ֮��,���ڴ�С������16 ����������int�͡�</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;hr&gt;
+&lt;h2 id=&quot;title-˫L�Ӿ�ѧϰ�ʼ�һ&quot;&gt;&lt;a href=&quot;#title-˫L�Ӿ�ѧϰ�ʼ�һ&quot; class=&quot;headerlink&quot; title=&quot;title:˫Ŀ�Ӿ�ѧϰ�ʼ�һ&quot;&gt;&lt;/a&gt;title:˫Ŀ�Ӿ�ѧϰ�ʼ�һ&lt;/h2&gt;&lt;p&gt;##���
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>markdown基础</title>

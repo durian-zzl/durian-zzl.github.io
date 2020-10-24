@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>双目视觉学习笔记一</title>
+    <url>/2020/10/24/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80/</url>
+    <content><![CDATA[<hr>
+<h2 id="title-˫L�Ӿ�ѧϰ�ʼ�һ"><a href="#title-˫L�Ӿ�ѧϰ�ʼ�һ" class="headerlink" title="title:˫Ŀ�Ӿ�ѧϰ�ʼ�һ"></a>title:˫Ŀ�Ӿ�ѧϰ�ʼ�һ</h2><p>##����</p>
+<p>����ڸ�����ʦѧϰ˫Ŀ�Ӿ������֪ʶ����ƪ�ʼ��Ƕ���zyh�����ģ���Ҫ��һЩѧϰ������ע��㣬�����ڴˡ�</p>
+<p>##ѧϰ�ʼ�</p>
+<p>###����ϵת��������У������Ŀ�궨ԭ��</p>
+<p>(����ϵת��)<a href="https://blog.csdn.net/a6333230/article/details/88343282" target="_blank" rel="noopener">https://blog.csdn.net/a6333230/article/details/88343282</a><br>(����У������Ŀ�궨)<a href="https://www.cnblogs.com/zyly/p/9366080.html#_label1" target="_blank" rel="noopener">https://www.cnblogs.com/zyly/p/9366080.html#_label1</a><br><strong>��غ�����</strong><br>����У����ͨ��calibrate Camera()�õ��Ļ���ϵ��������initUndistortRectifyMap()�����ӳ�䣩��remap()����ӳ�䣩У��</p>
+<p>###����У��ԭ��</p>
+<p><strong>����˵����</strong><br>�ټ������������ת����R1��R2��ͶӰ����P1��P2��//stereoRectify()<br>�ڼ���У������ӳ�����//initUndistortRectifyMap()<br>��У������ͼ�����Ч����//���߼���<br><strong>��ͶӰ����Q��</strong><br>������У�������������ʵ������������ϵ��ͼ����������ϵ֮���ת����<br><strong>��غ�����</strong><br>stereoCalibrate()˫Ŀ������궨����������������ͷ�����������֮���ת����ϵ��������������Ĳ������������������֮��Ĺ�ϵ�����Լ������ͱ��ʾ���<br>cvFindExtrinsicCameraParams2()����������ⲿ����<br>stereoRectify()��������R1��R2��P1��P2��Q��</p>
+<p>����ƥ�䣨SGBM�㷨��<br>��SAD�㷨ԭ����ͼ��ƥ�䣩<br>SGBM�㷨����SAD��������Ѱ��ÿ�����ص������Ӳ�<br><a href="https://blog.csdn.net/hitzijiyingcai/article/details/83178348?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.edu_weight&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.edu_weight" target="_blank" rel="noopener">https://blog.csdn.net/hitzijiyingcai/article/details/83178348?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.edu_weight&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.edu_weight</a><br>��SGBMԭ�����<br><a href="https://www.cnblogs.com/hrlnw/p/4746170.html" target="_blank" rel="noopener">https://www.cnblogs.com/hrlnw/p/4746170.html</a><br>(��������)<a href="https://blog.csdn.net/A_L_A_N/article/details/81490043" target="_blank" rel="noopener">https://blog.csdn.net/A_L_A_N/article/details/81490043</a><br><a href="https://blog.csdn.net/qq_36930777/article/details/78128184" target="_blank" rel="noopener">https://blog.csdn.net/qq_36930777/article/details/78128184</a><br>ע�⣺��OpenCV2.1�У�BM�㷨������ CV_16S ���� CV_32F �ķ�ʽ����Ӳ����ݣ�ʹ��32λfloat��ʽ���Եõ���ʵ���Ӳ�ֵ����CV_16S��ʽ�õ����Ӳ��������Ҫ����16���ܵõ���ȷ���ӲOpenCV2. ������������ƥ���㷨 SGBM ��GC ֻ֧�� CV_16S ��ʽ�� disparity ����<br>numberOfDisparities���Ӳ�ڣ�������Ӳ�ֵ����С�Ӳ�ֵ֮��,���ڴ�С������16 ����������int�͡�</p>
+]]></content>
+  </entry>
+  <entry>
     <title>markdown基础</title>
     <url>/2020/02/10/markdown%E8%AF%AD%E8%A8%80/</url>
     <content><![CDATA[<h2 id="markdown简介"><a href="#markdown简介" class="headerlink" title="markdown简介"></a>markdown简介</h2><p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。<br>Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。<br>Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多种格式的文档。<br>Markdown 能被使用来撰写电子书，如：Gitbook。当前许多网站都广泛使用 Markdown 来撰写帮助文档或是用于论坛上发表消息,例如：GitHub、简书等。</p>
